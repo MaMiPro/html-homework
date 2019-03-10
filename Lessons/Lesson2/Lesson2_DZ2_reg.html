@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-
+<form action="#" method="post"
+      enctype="multipart/form-data">
+    <fieldset>
+        <legend>Регистрация</legend>
+        <p><label >Login</label>
+            <input type="text" required placeholder="придумайте логин" minlength="4" maxlength="10">
+        <p><label >Email</label>
+            <input type="text" required placeholder="введите адрес эл. почты"></p>
+        <p><label>Password</label>
+            <input type="password" required placeholder="придумайте пароль"minlength="6" maxlength="10"></p>
+        <p> <label>Confirm Password</label>
+         <input type="password" required autocomplete="current-password" placeholder="повторите пароль" minlength="6" maxlength="10">
+        <p> <input type="file" multiple accept="image/*"></p>
+        <p> <input type="submit" value="Зарегестрироваться"></p>
+        <a href="Lesson2_DZ2_reg.html">Перейти на страницу авторизации</a>
+    </fieldset>
 </body>
 </html>

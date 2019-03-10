@@ -10,12 +10,14 @@
     <fieldset>
         <legend>Авторизация</legend>
         <p><label >Email</label>
-        <input type="email" value="@" required>
+        <input readonly type="email" value="@" required autofocus>
     </p>
-        <p><label>Пароль</label>
-        <input type="password" placeholder="password"minlength="4" maxlength="8"></p>
+        <p><label for="text">Password</label>
+        <input disabled id="text" type="password" placeholder="введите пароль" required minlength="4" maxlength="8"></p>
         <p> <input type="submit" value="Войти"></p>
+        <a href="Lesson2_DZ2_reg.html">Перейти на страницу регистрации</a>
     </fieldset>
+
 
 </body>
 </html>

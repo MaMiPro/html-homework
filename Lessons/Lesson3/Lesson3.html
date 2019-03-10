@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post"
+      enctype="multipart/form-data">
+<fieldset>
+    <p>
+    <legend>Поля для ввода чисел</legend>
+    <input id="number" type="number"
+            min="4" max="12" step="2" required>
+
+    </p>
+    <p>
+        <label for="range">ползунок</label>
+        <input id="range" type="range"
+               min="4" max="12" value="6" required>
+    </p>
+</fieldset>
+<fieldset>
+    <p>
+    <legend>Чекбоксы и радиокнопки</legend>
+        </p>
+   <label><input type="checkbox">Чекбоксы</label>
+
+    <p>
+        <label><input type="radio">Радиокнопка</label>
+
+    </p>
+</fieldset>
+<fieldset>
+    <label>Группы радиокнопок</label>
+    <p>
+    <label><input name="answer" type="radio">да</label>
+    <label><input name="answer" type="radio">нет</label>
+    <label><input name="answer" type="radio">не знаю</label>
+    </p>
+</fieldset>
+
+<fieldset>
+    <legend>Группы Чекбоксов</legend>
+    <label><input checked name="answer2[]" type="checkbox">Вариант 1</label>
+    <label><input name="answer2[]" type="checkbox">Вариант 2</label>
+    <label><input name="answer2[]" type="checkbox">Вариант 3</label>
+</fieldset>
+
+<fieldset>
+    <legend >Выбор даты и времении</legend>
+    <p>
+        <label for="time">Выбор времение</label>
+        <input id="time" type="time">
+    </p>
+    <p>
+        <label>Выбор даты</label>
+        <input id="date" type="date" min="2010-12-12">
+    </p>
+    <p>
+        <label for="datetime">Выбор даты и времени</label>
+        <input id="datetime" type="datetime-local">
+    </p>
+    <p>
+        <label for="month">Выбор месяца</label>
+        <input type="month" id="month">
+    </p>
+    <p>
+        <label for="week">Выбор недели</label>
+        <input type="week" id="week">
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Взятие цвета</legend>
+    <p>
+        <input type="color">
+    </p>
+    <p>
+        <label for="hidden">Скрытое поле</label>
+        <input type="hidden" id="hidden" value="info">
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Кнопки (тег input)</legend>
+    <p>
+        <input type="submit" value="отправить данные на сервер">
+    </p>
+    <p>
+        <input type="reset" value="очистить форму">
+    </p>
+    <p>
+        <input type="button" value="просто кнопка">
+    </p>
+    <p>
+        <input type="image" value="вставить картинку" src="path_to_img" alt="Альтернативный текст">
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Кнопки (тег button)</legend>
+    <p>
+        <button type="submit_btn" value="some_value">отправить данные</button>
+        <button type="reset">Очистить данные</button>
+        <button type="button">Просто кнопка</button>
+    </p>
+</fieldset>
+    <fieldset>
+        <legend>Многострочное текстовое поле</legend>
+        <textarea cols="20" rows="20" autofocus required placeholder="обезателен к заполнению" wrap="off"></textarea> <!--отчего зависит колличество коллон и столбцов???-->
+    </fieldset>
+<fieldset>
+    <legend>Раскрывающиеся списки</legend>
+    <p>
+        <select name="select" required multiple size="2">
+            <option label="элем1" value="1">Элемент списка 1</option>
+            <option disabled value="2">Элемент списка 2</option>
+            <option selected  value="3">Элемент списка 3</option>
+        </select>
+    </p>
+    <p>
+        <select>
+            <optgroup
+                    label="Заголовок для элементов 1">
+                <option>Элемент1</option>
+                <option>Элемент2</option>
+                <option>Элемент3</option>
+            </optgroup>
+            <optgroup
+                    label="Заголовок для элементов 2">
+                <option>Элемент1</option>
+                <option>Элемент2</option>
+                <option>Элемент3</option>
+            </optgroup>
+        </select>
+    </p>
+</fieldset>
+</form>
+
+</body>
+</html>

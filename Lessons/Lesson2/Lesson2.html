@@ -6,5 +6,37 @@
 </head>
 <body>
 
+<!--контейнер для формы-->
+<form action="#" method="post"
+       enctype="multipart/form-data"> <!--атрибут для отправки файлов-->
+
+   <fieldset> <!--отображается как рамка-->  <!--disabled - атрибут, убирает рамку, но это не точно-->
+    <legend>текстовые поля</legend>
+    <p>
+        <input type="text" required> <!--тег инпут для создания полей формы--> <!--type - создаёт текстовое поле-->
+    <p><input type="email" value="text"></p>
+    <p> <input type="password" placeholder="подсказка" minlength="4" maxlength="8" pattern="[A-Za-z]"></p>
+    <p> <input type="search"></p>
+
+    <!--кнопка для отправки формы-->
+    <input type="submit" value="кик">
+    </p>
+
+   </fieldset>
+
+    <fieldset>
+      <legend>Загрузка файлов</legend>
+          <p>                           <!--доступен только типу файл, и выбирает какой тип файла будет разрешён к загрузке на сервер-->
+             <input type="file" multiple accept="image/*">
+          </p>
+
+    </fieldset>
+
+
+
+
+</form>
 </body>
 </html>
+
+<!---->

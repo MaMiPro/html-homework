@@ -9,8 +9,56 @@
 <h1 align="center">Вы зашли на сайт, посвещённый пивной индустрии.</h1>
     <h2>Давайте попробуем определить, какой вид пива Вам подходит?</h2>
     <h2>Для этого нужно ответить на несколько вопросов:</h2>
+
 <form>
-К
+<fieldset>
+    <legend required>1) Вы предпочитаете долгие посиделки или один бокальчик?</legend>
+    <p>
+        <label><input name="answer" type="radio">Долгие</label>
+        <label><input name="answer" type="radio">Один бокальчик</label>
+    </p>
+</fieldset>
+
+    <fieldset>
+        <legend>2) Выберете страну или несколько стран Европы, чьё пиво Вам больше всего симпатизирует</legend>
+        <label><input name="answer2[]" type="checkbox">Чехия</label>
+        <label><input name="answer2[]" type="checkbox">Германия</label>
+        <label><input name="answer2[]" type="checkbox">Бельгия</label>
+        <label><input name="answer2[]" type="checkbox">Ирландия</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>3) Укажите свой рекорд употребления пива, за вечер в баре?</legend>
+        <p>
+            <select required>
+                <optgroup>
+                <option disabled> 1 Бокал </option>
+                <option   value="2">2 Бокала</option>
+                <option selected  value="3">3 Бокала</option>
+                <option   value="4">4 Бокала</option>
+                <option   value="5">5 Бокалов</option>
+                <option   value="6">6 Бокалов</option>
+                <option   value="7">7 Бокалов</option>
+                <option   value="8">8 Бокалов</option>
+                <option  value="9">9 Бокалов</option>
+                <option   value="10">10 Бокалов</option>
+                <option>Только не говори, что больше))</option>
+                </optgroup>
+            </select>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>4) Раскажите в двух предложения, как Вы любите пиво?</legend>
+        <textarea cols="200" rows="2" autofocus required placeholder="Обязателен к заполнению" wrap=""></textarea> <!--отчего зависит колличество коллон и столбцов???-->
+    </fieldset>
+    <h2>Мы подошли к самому интересному. <br> Сейчас эта чуда машина определит, какое же пиво Вам подходит:</h2>
+        <p>
+    <button type="submit_btn" value="some_value">Узнать</button>
+    <button type="reset">Сбросить</button>
+    <button type="button">Не стоит мне этого знать</button>
+        </p>
+
+
 </form>
 </body>
 </html>

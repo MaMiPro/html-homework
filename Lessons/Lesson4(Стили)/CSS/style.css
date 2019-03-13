@@ -1,0 +1,88 @@
+/* подключение других файдов со стилями*/
+
+/*css*/
+@import url("style2.css") ;
+
+
+/* css селекторы*/
+
+/*css селекторы {*/
+     /*свойство: значение*/
+     /*свойство2: значение*/
+     /*свойство3: значение*/
+              /*}*/
+
+/*селекторы тегов (имя тегов) */
+
+h3
+  {
+    color: green;
+  }
+
+
+ /* селектор класса*/
+.cenret {
+    text-align: center;
+}
+/*дочерний селектор*/
+
+p > em {
+    font-size: 30pt;
+}
+
+p em {
+    color:blue;
+}
+
+/* селектор индификатор элемента*/
+#conteiner {
+            height: 100px;
+            width: 100px;
+            background: yellow;
+}
+
+
+/*селектор потока*/
+p em {
+    color: orange;
+}
+p .red a {
+    color: blue;
+    text-decoration: green; /*отключает подчёркивание ссылки*/
+}
+/*сначала тег р потм элемент с классом red*/
+p.red a {
+    color: green;
+}
+
+
+/*стили будут применяться ко всем ссылкам, которые лежат в теге с класоом red*/
+.red a{
+    color: red;
+}
+
+nav li {
+    list-style-type: none; /*убираем маркеры из списка*/
+        }
+
+
+h3 {
+    color: green; !important;
+}
+
+h3 {
+    color: red;
+}
+
+#elemId{
+    background: yellow;
+}
+
+.elem-class {
+    background: green;
+}
+/* 0100 - ID
+   0010 - CLASS
+   0001 - TEG
+   1000 - Встроенный стиль
+ */

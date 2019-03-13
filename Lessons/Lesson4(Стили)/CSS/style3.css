@@ -1,0 +1,74 @@
+/*всё задаётся в одном классе*/
+
+/*задаём mafgin - поля тегов*/
+.div {
+    /* margin-top: 30px;
+     margin-right: 40px;
+     margin-bottom: 30px;
+     margin-left: 15px;
+ */
+    margin: 15px; /*всё по 15*/
+
+    margin: 15px 30px; /* верх-низ по 15 право-лево по 30*/
+
+    margin: 15px 30px 10px; /* 15 сверху, право-лево 30, снизу 10*/
+
+    margin: 30px 15px 40px 20px; /*сверху, справа , снизу, слева*/
+}
+
+
+
+/*padding*/
+.div {
+    padding-top: 10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    padding-left: 10px;
+}
+
+/*рамки*/
+.div {
+    border: 1px solid brown;
+    border-radius: 20px;
+    border-top: 1px solid brown;
+    border-right: 1px solid brown;
+    border-bottom: 1px solid #63a536;
+    border-left: 1px solid #a59ca2;
+
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.div,
+.elem,
+ul,
+#elemId,
+nav li{
+    margin: 20px;
+}
+
+.elem{
+    color: red;
+}
+
+.p {
+    height: 100px;
+    width: 200px;
+    border: 1px solid #333;
+    display: inline; /*назначает блочный элемент из строчного*/
+}
+
+.span {
+    height: 100px;
+    width: 200px;
+    border: 1px solid #333;
+    display: block;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    background: green;
+}

@@ -70,5 +70,72 @@ nav li{
 nav li {
     list-style-type: none;
     display: inline-block;
-    background: green;
+    background: yellow;
 }
+
+
+
+
+
+.visibility {
+    visibility: visible; /* по умолчанию видимый элемент*/
+
+    visibility: hidden; /* делает элемент не виденим, но место остаётся*/
+
+    display: none; /*скрывает полностью и место под него не остётся*/
+}
+
+.static,
+.relative,
+.absolute,
+.fixed,
+.float{
+    border: 1px solid gray;
+    background: green;
+
+     /*visibility: collapse;*/
+}
+
+.static{
+    position: static;
+}
+
+.fixed,
+.absolute {
+    position: fixed; /*фиксирует элемент в окне при прокрутке в браузере*/
+
+    top: 5px; /* показывет насколько нам нужно отступить от верхней границы*/
+
+    right: 10px; /*отступ от правой границы*/
+
+    left: 10px;
+
+    /*bottom: 10px;*/
+
+    background: whitesmoke;
+
+    /*vertical-align: center; */
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    /*bottom: 10px;*/
+}
+
+.relative {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.float{
+    float: left; /*right, none*/
+    width: 70px;
+}
+
+.clear{
+    clear: both; /*отменяет обтикание которое идёт полсе float*/
+}
+

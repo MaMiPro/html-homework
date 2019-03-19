@@ -1,0 +1,44 @@
+p{
+    background: blueviolet;
+}
+div{
+    background: cadetblue;
+}
+.flex1{
+    display: flex; /*обязательно для установления значения флекс*/
+    justify-content: space-around; /*горизонтальное выравниевание*/
+    justify-content: space-between;
+}
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline;
+}
+.flex3{
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+.flex4{
+    display: flex;
+    width: 250px;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+.flex5{
+    display: flex;
+    width: 250px;
+
+    /*обязательные свойства родительского контейнера*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+}

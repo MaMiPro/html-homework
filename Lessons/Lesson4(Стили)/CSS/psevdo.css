@@ -1,0 +1,49 @@
+.hover{
+    height: 200px;
+    width: 300px;
+    background: green;
+}
+.hover:hover{
+    background: yellow;
+    height: 300px;
+    width: 400px;
+}
+a:hover{
+    color: red;
+}
+a:visited {
+    color: blueviolet;
+}
+a:link{
+    color: black;
+}
+a:active{
+    color: red;
+}
+.hover:active{
+    background: red;
+}
+/*для стилизации элементов к которым перешли по ссылки*/
+.hover:target{
+   display: none;
+}
+.form{
+    display: none;
+}
+.form:target{
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    background: yellow;
+}
+
+/*селекторы атрибутов*/
+селектор[атрибут="значение"]{}
+
+input[type="text"] {
+    color: red
+} /*стили применятся ко всем текстам*/
+/*в квадратных стилям применяем стиль и тогда примениться стиль ко всем указанным атрибутам*/
